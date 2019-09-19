@@ -1,6 +1,4 @@
 Crawler and keyword variation 
-Homework one for CS6200
-Fall 2018
 
 Code author
 -----------
