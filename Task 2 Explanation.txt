@@ -1,0 +1,5 @@
+Task 2 Explanation:
+
+I get three documents of format txt from three URLS and merged into one txt file and I read them again and sort it by depths attribute. 
+
+

@@ -1,0 +1,18 @@
+Task 3 Explanation:
+
+- I maintain a keyword sets to avoid duplication and it initially includes the input “green” . 
+
+- From each page, the crawler extract all aproper anchor text with links. For each anchor text, I simply slice it by space. Until now, I got the words set from the anchor text.
+
+- I use the function from NLTK to check each word in words set:
+   is it valid?
+   is it meaningful English words?
+
+- I get the synonyms of keyword from words set and appended the synonyms into the keywords sets. This is the way I tried to handle keyword variation. 
+  
+- To explain about the how to decide the correlation between words:
+  Here is a loop pick up each word from the words set and keyword from keyword set.
+I set the threshold. Every time I slice the anchor text into a word set and compared with keywords. Library NLTK derive the correlation between them. I got the max correlation score as final score for every loop. If the final score is more than threshold then I will add the URL to the frontier waiting for visit.
+
+- Also, I download the documents when I requested each URLs in frontier.
+
